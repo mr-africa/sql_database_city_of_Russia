@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sqlite3
 
-conn = sqlite3.connect('/home/africa/work/python/airbag/db/airbag.sqlite')
+conn = sqlite3.connect('/path/to/your/database/')
 cursor = conn.cursor()
 table_name = 'cart_region'
 
