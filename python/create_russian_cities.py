@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import sqlite3
 
-conn = sqlite3.connect('/home/africa/work/python/airbag/db/airbag.sqlite')
+conn = sqlite3.connect('/path/to/your/database/')
 cursor = conn.cursor()
 table_name = 'cart_city'
 
-print '\n======Start creating cityes======\n'
+print '\n======Start creating cities======\n'
 
 cursor.execute("INSERT INTO \
     " + table_name + " ('region_id', 'name', 'visible')\
@@ -7524,5 +7524,5 @@ cursor.execute("INSERT INTO \
         VALUES (5625, 'Ярославль', 1)")
 
 conn.commit()
-print '\n======All cityes created======\n'
+print '\n======All cities created======\n'
 conn.close()
